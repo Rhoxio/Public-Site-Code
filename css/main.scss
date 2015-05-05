@@ -1,0 +1,622 @@
+$lt-blue:#9fbfbf;
+
+$onyx: rgba(0, 0, 0, 0.8);
+$lt-onyx: rgba(0, 0, 0, 0.1);
+
+$cream:#F0F5D7;
+$dark-cream: $cream - 20;
+
+
+$transparency: rgba(0, 0, 0, 0.0);
+$eggshell: #FAF0E6;
+
+@mixin text-shadow($color: #000, $weight: 10px){
+	-moz-text-shadow: 0 0 $weight $color; 
+	-webkit-text-shadow: 0 0 $weight $color; 
+	text-shadow: 0 0 $weight $color;
+}
+
+@mixin border-radius($radius: 5px){
+	-webkit-border-radius: $radius;
+	-moz-border-raiud: $radius;
+	border-radius: $radius;
+}
+
+
+@mixin box-shadow-small(){
+	transition: box-shadow 0.5s ease;
+	box-shadow: 5px 5px 3px #888888;
+}
+a
+body {
+	background: white;
+	height: 1440px;
+}
+
+
+.header{
+	background-color: $transparency;
+
+	.header-wrapper{
+		background-color: $transparency;
+		float: right;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+
+	a{
+		text-decoration: none;
+		opacity: 0.8;
+	}
+
+	a:hover{
+		-moz-text-shadow: 0 0 10px #ccc; 
+		-webkit-text-shadow: 0 0 10px #ccc; 
+		text-shadow: 0 0 10px #ccc;
+		opacity: 1.0;
+	}
+
+	button:hover{
+		background-color: white;
+		color: black;
+	}
+
+	div{
+		font-family: Quicksand;
+		padding: 10px;
+		display: inline-block;
+		font-size: 100%;
+		color: $cream;
+	}
+
+	button{
+		font-family: Quicksand;
+		background-color: $transparency;
+		color: white;
+		height: 50px;
+		width: 100px;
+		border: 2px solid white;
+	}
+}
+
+.main-display{
+	background: url(../images/mac_desk2.png) no-repeat center;
+	background-size: cover;
+	height: 660px;
+
+	.supertag{
+	text-align:center;
+	position: relative;
+	width: 700px;
+	margin-left: -350px;
+
+	font-family:Fjalla One;
+	font-size: 500%;
+	color: $cream;
+
+	left: 50%;
+	top:40%;
+	}
+
+	.tagline{
+		display: none;
+		// @include text-shadow(#ccc, 10px);
+		font-family: Tangerine;
+		color: $cream;
+	}
+
+	.name-desc{
+		position: relative;
+		left: 50%;
+		top: 70%;
+
+		margin-left: -350px;
+		text-align: center;
+		width: 700px;
+
+		display: none;
+		font-family: Oswald;
+		color: rgba(0, 0, 0, 0.9);
+
+
+		h4{
+			color: $cream;
+			margin:0;
+			margin-bottom: 0;
+			font-size: 200%;
+		}
+
+		h3{
+			color: $cream;
+			margin:0;
+			margin-top: 5px;
+			font-size: 200%;
+		}
+	}
+}
+
+// .intro{
+// 	@include border-radius;
+// 	background-color: #333;
+// 	color: white;
+// 	margin-top: 10px;
+// }
+
+// .main-body{
+// 	@extend .intro;
+// }
+
+.mid-section{
+	height: 1840px;
+
+	.about-me{
+
+		position: absolute;
+		top: 720px;
+		left: 50%;
+		margin-left: -350px;
+
+		text-align: center;
+
+		width: 700px;
+		height: 250px;
+
+		// border: 1px solid black;
+
+		p{
+			margin: 10px;
+			margin-top:0px;
+			padding:0;
+		}
+
+		button{
+			font-family: Quicksand;
+			background-color: $transparency;
+			color: black;
+			height: 45px;
+			width: 100px;
+			border: 2px solid black;
+		}
+
+		button:hover{
+			background-color: black;
+			color: white;
+		}
+
+		.about-tagline{
+			color: black;
+			font-family: Fjalla One;
+			font-size: 250%;
+			margin-bottom: 30px;
+		}
+
+		.description{
+			font-family: Quicksand;
+			font-size: 110%;
+			color: gray;
+			line-height: 25px;
+		}
+
+		.youtube-button{
+			position: absolute;
+
+			top: 240px;
+			left: 50%;
+			margin-left: -125px;
+		}
+
+		.blog-button{
+			position: absolute;
+
+			top: 240px;
+			left: 50%;
+			margin-left: 25px;
+		}
+
+	}
+
+	.divider{
+		position: absolute;
+		z-index: 1;
+
+		top: 1025px;
+		left: 50%;
+		margin-left: -350px;
+
+		width: 700px;
+		height: 1px;
+
+		opacity: 0.2;
+
+		background-color: black;
+	}
+
+	.divider2{
+		position: absolute;
+		z-index: 1;
+
+		top: 1620px;
+		left: 50%;
+		margin-left: -350px;
+
+		width: 700px;
+		height: 1px;
+
+		opacity: 0.2;
+
+		background-color: black;
+	}
+
+	.projects{
+		position: relative;
+		top: 390px;
+		left: 50%;
+
+		font-family: Fjalla One;
+		font-size: 250%;
+
+		text-align: center;
+
+		width: 400px;
+		margin-left: -200px;
+	}
+
+	.game-engine{
+		position: absolute;
+
+		left: 100px;
+		top: 1200px;
+
+		width: 25%;
+		height: 350px;
+
+		border: 5px outset #333333;
+
+		background-image: url(../images/adjective_logo.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+
+
+		.game-engine-overlay{
+			width: 100%;
+			height: 100%;
+
+			background-color:black;
+			opacity: 0;
+			z-index: 2;
+
+			color: white;
+		}
+
+		.game-engine-text{
+			position: absolute;
+			top: 30%;
+			left:0%;
+			opacity: 0;
+			pointer-events:none;
+
+			text-align: center;
+
+			width: 100%;
+
+			color: white;
+
+		}
+
+	}
+
+	.smooth-transaction{
+		position: absolute;
+
+		right: 100px;
+		top: 1200px;
+
+		width: 25%;
+		height: 350px;
+
+		border: 5px outset #333333;
+
+		background-image: url(../images/smooth.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.smooth-overlay{
+			width: 100%;
+			height: 100%;
+
+			background-color:black;
+			opacity: 0;
+			z-index: 2;
+
+			color: white;
+		}
+
+		.smooth-text{
+			position: absolute;
+			top: 35%;
+			left:0%;
+			opacity: 0;
+			pointer-events:none;
+
+			text-align: center;
+
+			width: 100%;
+
+			color: white;
+
+		}
+
+	}
+
+	.play-adjective{
+		position: absolute;
+
+		right: 50%;
+		top: 1200px;
+
+		margin-right: -13%;
+
+		width: 26%;
+		height: 350px;
+
+		border: 5px outset #333333;
+
+		background-image: url(../images/game_display.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		.adjective-overlay{
+			width: 100%;
+			height: 100%;
+
+			background-color:black;
+			opacity: 0;
+			z-index: 2;
+
+			color: white;
+		}
+
+		.adjective-text{
+			position: absolute;
+			top: 30%;
+			left: 0%;
+			opacity: 0;
+			pointer-events:none;
+
+			text-align: center;
+
+			width: 100%;
+
+			color: white;
+
+		}
+
+	}
+
+	.proficiencies{
+		position: absolute;
+		top: 1620px;
+
+		left: 50%;
+		margin-left: -350px;
+
+		width: 700px;
+
+		text-align: center;
+
+		.pro-title{
+			text-align: center;
+			font-family: Fjalla One;
+			font-size: 250%;
+		}
+
+		.text-display{
+			position: absolute;
+			top: 700px;
+
+			font-family: Quicksand;
+			color: gray;
+			font-size: 110%;
+
+			width: 700px;
+			height: 100px;
+		}
+
+		.icon-display{
+			position: relative;
+			top: 350px;
+
+			font-family: Quicksand;
+			color: gray;
+			font-size: 110%;
+
+			width: 700px;
+			height: 0px;
+
+			.icon1{
+				position: absolute;
+				left: 0%;
+				height: 100%;
+				width: 200px;
+
+				border: 2px solid black;
+
+				// background-image: url(../images/angularjsicon.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.icon2{
+				position: absolute;
+				left: 50%;
+				height: 100%;
+				width: 200px;
+
+				border: 2px solid black;
+
+				margin-left: -100px;
+
+				// background-image: url(../images/createjsicon.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.icon3{
+				position: absolute;
+				right: 0%;
+				height: 100%;
+				width: 200px;
+
+				border: 2px solid black;				
+
+				// background-image: url(../images/react.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.ruby{
+			position: absolute;
+
+			border: 5px outset #333333;
+			border-radius: 40px;
+
+			width: 300px;
+			height: 300px;
+
+			background: url(../images/rubylogo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.js{
+			position: absolute;
+
+			border: 5px outset #333333;
+			border-radius: 40px;
+
+			right: 0%;
+
+			width: 300px;
+			height: 300px;
+
+			background: url(../images/jslogo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+	}
+
+	.test{
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		pointer-events: all;
+
+		z-index: 999;
+
+		background-color: green;
+
+		.bg{
+			width: 100%;
+			height: 1%;
+
+			opacity: 0;
+
+			background-color: red;
+		}
+
+		p{
+			margin:0;
+			border:0;
+			opacity: 0;
+		}
+
+	}
+}
+
+.footer{
+	background-color: $onyx;
+	width: 100%;
+	height: 200px;
+
+	opacity: 0.9;
+
+	.icons{
+		position: relative;
+
+		width: 480px;
+		height: 130px;
+
+		left: 50%;
+		top: 30px;
+
+		margin-left: -240px;
+
+		.github-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 0%;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/github2.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.youtube-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 120px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/youtube.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.gmail-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 240px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/gmail.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+
+		.linkedin-icon{
+			position: absolute;
+
+			bottom: 0%;
+			left: 360px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/linkedin.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+	}
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

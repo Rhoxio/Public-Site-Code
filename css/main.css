@@ -1,0 +1,365 @@
+body {
+  background: white;
+  height: 1440px; }
+
+.header {
+  background-color: transparent; }
+  .header .header-wrapper {
+    background-color: transparent;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px; }
+  .header a {
+    text-decoration: none;
+    opacity: 0.8; }
+  .header a:hover {
+    -moz-text-shadow: 0 0 10px #ccc;
+    -webkit-text-shadow: 0 0 10px #ccc;
+    text-shadow: 0 0 10px #ccc;
+    opacity: 1.0; }
+  .header button:hover {
+    background-color: white;
+    color: black; }
+  .header div {
+    font-family: Quicksand;
+    padding: 10px;
+    display: inline-block;
+    font-size: 100%;
+    color: #F0F5D7; }
+  .header button {
+    font-family: Quicksand;
+    background-color: transparent;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border: 2px solid white; }
+
+.main-display {
+  background: url(../images/mac_desk2.png) no-repeat center;
+  background-size: cover;
+  height: 660px; }
+  .main-display .supertag {
+    text-align: center;
+    position: relative;
+    width: 700px;
+    margin-left: -350px;
+    font-family: Fjalla One;
+    font-size: 500%;
+    color: #F0F5D7;
+    left: 50%;
+    top: 40%; }
+  .main-display .tagline {
+    display: none;
+    font-family: Tangerine;
+    color: #F0F5D7; }
+  .main-display .name-desc {
+    position: relative;
+    left: 50%;
+    top: 70%;
+    margin-left: -350px;
+    text-align: center;
+    width: 700px;
+    display: none;
+    font-family: Oswald;
+    color: rgba(0, 0, 0, 0.9); }
+    .main-display .name-desc h4 {
+      color: #F0F5D7;
+      margin: 0;
+      margin-bottom: 0;
+      font-size: 200%; }
+    .main-display .name-desc h3 {
+      color: #F0F5D7;
+      margin: 0;
+      margin-top: 5px;
+      font-size: 200%; }
+
+.mid-section {
+  height: 1840px; }
+  .mid-section .about-me {
+    position: absolute;
+    top: 720px;
+    left: 50%;
+    margin-left: -350px;
+    text-align: center;
+    width: 700px;
+    height: 250px; }
+    .mid-section .about-me p {
+      margin: 10px;
+      margin-top: 0px;
+      padding: 0; }
+    .mid-section .about-me button {
+      font-family: Quicksand;
+      background-color: transparent;
+      color: black;
+      height: 45px;
+      width: 100px;
+      border: 2px solid black; }
+    .mid-section .about-me button:hover {
+      background-color: black;
+      color: white; }
+    .mid-section .about-me .about-tagline {
+      color: black;
+      font-family: Fjalla One;
+      font-size: 250%;
+      margin-bottom: 30px; }
+    .mid-section .about-me .description {
+      font-family: Quicksand;
+      font-size: 110%;
+      color: gray;
+      line-height: 25px; }
+    .mid-section .about-me .youtube-button {
+      position: absolute;
+      top: 240px;
+      left: 50%;
+      margin-left: -125px; }
+    .mid-section .about-me .blog-button {
+      position: absolute;
+      top: 240px;
+      left: 50%;
+      margin-left: 25px; }
+  .mid-section .divider {
+    position: absolute;
+    z-index: 1;
+    top: 1025px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: black; }
+  .mid-section .divider2 {
+    position: absolute;
+    z-index: 1;
+    top: 1620px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: black; }
+  .mid-section .projects {
+    position: relative;
+    top: 390px;
+    left: 50%;
+    font-family: Fjalla One;
+    font-size: 250%;
+    text-align: center;
+    width: 400px;
+    margin-left: -200px; }
+  .mid-section .game-engine {
+    position: absolute;
+    left: 100px;
+    top: 1200px;
+    width: 25%;
+    height: 350px;
+    border: 5px outset #333333;
+    background-image: url(../images/adjective_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    .mid-section .game-engine .game-engine-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0;
+      z-index: 2;
+      color: white; }
+    .mid-section .game-engine .game-engine-text {
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+      width: 100%;
+      color: white; }
+  .mid-section .smooth-transaction {
+    position: absolute;
+    right: 100px;
+    top: 1200px;
+    width: 25%;
+    height: 350px;
+    border: 5px outset #333333;
+    background-image: url(../images/smooth.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .mid-section .smooth-transaction .smooth-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0;
+      z-index: 2;
+      color: white; }
+    .mid-section .smooth-transaction .smooth-text {
+      position: absolute;
+      top: 35%;
+      left: 0%;
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+      width: 100%;
+      color: white; }
+  .mid-section .play-adjective {
+    position: absolute;
+    right: 50%;
+    top: 1200px;
+    margin-right: -13%;
+    width: 26%;
+    height: 350px;
+    border: 5px outset #333333;
+    background-image: url(../images/game_display.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .mid-section .play-adjective .adjective-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0;
+      z-index: 2;
+      color: white; }
+    .mid-section .play-adjective .adjective-text {
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+      width: 100%;
+      color: white; }
+  .mid-section .proficiencies {
+    position: absolute;
+    top: 1620px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    text-align: center; }
+    .mid-section .proficiencies .pro-title {
+      text-align: center;
+      font-family: Fjalla One;
+      font-size: 250%; }
+    .mid-section .proficiencies .text-display {
+      position: absolute;
+      top: 700px;
+      font-family: Quicksand;
+      color: gray;
+      font-size: 110%;
+      width: 700px;
+      height: 100px; }
+    .mid-section .proficiencies .icon-display {
+      position: relative;
+      top: 350px;
+      font-family: Quicksand;
+      color: gray;
+      font-size: 110%;
+      width: 700px;
+      height: 0px; }
+      .mid-section .proficiencies .icon-display .icon1 {
+        position: absolute;
+        left: 0%;
+        height: 100%;
+        width: 200px;
+        border: 2px solid black;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .mid-section .proficiencies .icon-display .icon2 {
+        position: absolute;
+        left: 50%;
+        height: 100%;
+        width: 200px;
+        border: 2px solid black;
+        margin-left: -100px;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .mid-section .proficiencies .icon-display .icon3 {
+        position: absolute;
+        right: 0%;
+        height: 100%;
+        width: 200px;
+        border: 2px solid black;
+        background-repeat: no-repeat;
+        background-size: cover; }
+    .mid-section .proficiencies .ruby {
+      position: absolute;
+      border: 5px outset #333333;
+      border-radius: 40px;
+      width: 300px;
+      height: 300px;
+      background: url(../images/rubylogo.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .mid-section .proficiencies .js {
+      position: absolute;
+      border: 5px outset #333333;
+      border-radius: 40px;
+      right: 0%;
+      width: 300px;
+      height: 300px;
+      background: url(../images/jslogo.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .mid-section .test {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    pointer-events: all;
+    z-index: 999;
+    background-color: green; }
+    .mid-section .test .bg {
+      width: 100%;
+      height: 1%;
+      opacity: 0;
+      background-color: red; }
+    .mid-section .test p {
+      margin: 0;
+      border: 0;
+      opacity: 0; }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 200px;
+  opacity: 0.9; }
+  .footer .icons {
+    position: relative;
+    width: 480px;
+    height: 130px;
+    left: 50%;
+    top: 30px;
+    margin-left: -240px; }
+    .footer .icons .github-icon {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      width: 100px;
+      height: 100px;
+      background: url(../images/github2.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .footer .icons .youtube-icon {
+      position: absolute;
+      bottom: 0%;
+      left: 120px;
+      width: 100px;
+      height: 100px;
+      background: url(../images/youtube.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .footer .icons .gmail-icon {
+      position: absolute;
+      bottom: 0%;
+      left: 240px;
+      width: 100px;
+      height: 100px;
+      background: url(../images/gmail.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .footer .icons .linkedin-icon {
+      position: absolute;
+      bottom: 0%;
+      left: 360px;
+      width: 100px;
+      height: 100px;
+      background: url(../images/linkedin.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */

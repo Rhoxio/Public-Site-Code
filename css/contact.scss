@@ -1,0 +1,358 @@
+$lt-blue:#9fbfbf;
+
+$onyx: rgba(0, 0, 0, 0.6);
+$lt-onyx: rgba(0, 0, 0, 0.4);
+
+$cream:#F0F5D7;
+$dark-cream: $cream - 20;
+
+
+$transparency: rgba(0, 0, 0, 0.0);
+$eggshell: #FAF0E6;
+
+@mixin text-shadow($color: #000, $weight: 10px){
+	-moz-text-shadow: 0 0 $weight $color; 
+	-webkit-text-shadow: 0 0 $weight $color; 
+	text-shadow: 0 0 $weight $color;
+}
+
+@mixin border-radius($radius: 5px){
+	-webkit-border-radius: $radius;
+	-moz-border-raiud: $radius;
+	border-radius: $radius;
+}
+
+
+@mixin box-shadow-small(){
+	transition: box-shadow 0.5s ease;
+	box-shadow: 5px 5px 3px #888888;
+}
+
+html{
+	margin:0;
+	padding: 0;
+}
+
+body {
+	background: white;
+	height: 1440px;
+}
+
+
+.header{
+	background-color: $transparency;
+
+	.header-wrapper{
+		background-color: $transparency;
+		float: right;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+
+	a{
+		text-decoration: none;
+		opacity: 0.8;
+	}
+
+	a:hover{
+		-moz-text-shadow: 0 0 10px #ccc; 
+		-webkit-text-shadow: 0 0 10px #ccc; 
+		text-shadow: 0 0 10px #ccc;
+		opacity: 1.0;
+	}
+
+	button:hover{
+		background-color: white;
+		color: black;
+	}
+
+	div{
+		font-family: Quicksand;
+		padding: 10px;
+		display: inline-block;
+		font-size: 100%;
+		color: $cream;
+	}
+
+	button{
+		font-family: Quicksand;
+		background-color: $transparency;
+		color: white;
+		height: 50px;
+		width: 100px;
+		border: 2px solid white;
+	}
+}
+
+.main-display{
+	background: url(http://i.imgur.com/8rQCrfd.jpg);
+	height: 560px;
+
+	a{
+		color: white;
+	}
+
+	h3{
+		color: $cream;
+		margin:0;
+		margin-top: 0px;
+		font-size: 200%;
+	}
+
+	.supertag{
+		text-align:center;
+		position: relative;
+		width: 700px;
+		margin-left: -350px;
+
+		font-family:Fjalla One;
+		font-size: 500%;
+		color: $cream;
+
+		left: 50%;
+		top:40%;
+	}
+}
+
+.mid-section{
+	height: 1200px;
+
+	a{
+		color: #2c3e50;
+		text-decoration: none;
+	}
+
+	h3{
+		margin:0;
+		font-size: 200%;
+		font-family: Quicksand;
+		color: $onyx;
+	}
+
+	h4{
+		text-align: center;
+		position: relative;
+		font-size:150%;
+		width: 50%;
+		top: 15%;
+		left: 50%;
+		margin-left: -25%;
+		font-family: Quicksand;
+	}
+
+	.divider{
+		position: absolute;
+		z-index: 1;
+
+		top: 950px;
+		left: 50%;
+		margin-left: -350px;
+
+		width: 700px;
+		height: 1px;
+
+		opacity: 0.2;
+
+		background-color: black;
+	}
+
+	.info-wrapper{
+		line-height: 30px;
+		position: relative;
+		top: 5%;
+		left: 20%;
+		width: 60%;
+
+		.me{
+			position: absolute;
+			right: 0%;
+			top: 0%;
+			width: 250px;
+			height: 250px;
+			background: url(../images/me.png);
+			background-size: cover;
+		}
+
+		.p-info{
+			position: relative;
+			color: $lt-onyx;
+			// top: 10%;
+			// left: 30%;
+			width: 300px;
+			font-size: 150%;
+			font-family: Quicksand;
+		}
+	}
+
+
+	.form-wrapper{
+
+		p{
+			font-family: Quicksand;
+			margin: 0;
+			padding: 0;
+			font-size: 120%;
+		}
+
+		input{
+			margin: 5px;
+			margin-left: 10px;
+			padding: 0;
+		}
+
+		button{
+		font-family: Quicksand;
+		background-color: $transparency;
+		color: black;
+		height: 50px;
+		width: 100px;
+		border: 2px solid black;
+		}
+
+		position: relative;
+		top: 15%;
+		left: 50%;
+		margin-left: -25%;
+
+		// background-color: red;
+		width: 50%;
+		height: 50%;
+
+		.submit-email{
+			position: absolute;
+			bottom: 0%;
+			margin-left: 5px;
+			left: 0%;
+		}
+
+		.sizing{
+			border: 1px solid $onyx;
+			border-radius: 5px;
+			width: 50%;
+			height: 30px;
+		}
+
+		.body-input{
+			margin: 5px;
+			margin-left: 10px;
+			border: 1px solid $onyx;
+			border-radius: 5px;
+			width: 70%;
+			height: 300px;
+		}
+
+		.thank-you{
+			visibility: hidden;
+			text-align: center;
+			font-size: 100%;
+
+			position: absolute;
+			width: 50%;
+
+			height: 8%;
+			left: 20%;
+			bottom: 0%;
+		}
+	}
+
+
+}
+
+// .intro{
+// 	@include border-radius;
+// 	background-color: #333;
+// 	color: white;
+// 	margin-top: 10px;
+// }
+
+// .main-body{
+// 	@extend .intro;
+// }
+
+.footer{
+	background-color: $onyx;
+	width: 100%;
+	height: 200px;
+
+	opacity: 0.9;
+
+	.icons{
+		position: relative;
+
+		width: 480px;
+		height: 130px;
+
+		left: 50%;
+		top: 30px;
+
+		margin-left: -240px;
+
+		.github-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 0%;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/github2.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.youtube-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 120px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/youtube.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.gmail-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 240px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/gmail.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+
+		// Can these be grouped down in to 'functions' with SASS?
+
+		.linkedin-icon{
+			position: absolute;
+
+			bottom: 0%;
+			left: 360px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/linkedin.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+	}
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

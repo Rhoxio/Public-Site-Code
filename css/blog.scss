@@ -1,0 +1,221 @@
+$cream:#F0F5D7;
+$dark-cream: $cream - 20;
+$onyx: rgba(0, 0, 0, 0.8);
+$transparency: rgba(0, 0, 0, 0.0);
+$eggshell: #FAF0E6;
+
+@mixin text-shadow($color: #000, $weight: 10px){
+	-moz-text-shadow: 0 0 $weight $color; 
+	-webkit-text-shadow: 0 0 $weight $color; 
+	text-shadow: 0 0 $weight $color;
+}
+
+@mixin border-radius($radius: 5px){
+	-webkit-border-radius: $radius;
+	-moz-border-raiud: $radius;
+	border-radius: $radius;
+}
+
+
+@mixin box-shadow-small(){
+	transition: box-shadow 0.5s ease;
+	box-shadow: 5px 5px 3px #888888;
+}
+
+body {
+	background: white;
+	height: 1440px;
+}
+
+
+.header{
+	background-color: $transparency;
+
+	.header-wrapper{
+		background-color: $transparency;
+		float: right;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+
+	a{
+		text-decoration: none;
+		opacity: 0.8;
+	}
+
+	a:hover{
+		-moz-text-shadow: 0 0 10px #ccc; 
+		-webkit-text-shadow: 0 0 10px #ccc; 
+		text-shadow: 0 0 10px #ccc;
+		opacity: 1.0;
+	}
+
+	button:hover{
+		background-color: white;
+		color: black;
+	}
+
+	div{
+		font-family: Quicksand;
+		padding: 10px;
+		display: inline-block;
+		font-size: 100%;
+		color: $cream;
+	}
+
+	button{
+		font-family: Quicksand;
+		background-color: $transparency;
+		color: white;
+		height: 50px;
+		width: 100px;
+		border: 2px solid white;
+	}
+}
+
+.main-display{
+	background: url(../images/mac_desk2.png) no-repeat center;
+	background-size: cover;
+	height: 660px;
+
+	.supertag{
+	text-align:center;
+	position: relative;
+	width: 700px;
+	margin-left: -350px;
+
+	font-family:Fjalla One;
+	font-size: 500%;
+	color: $cream;
+
+	left: 50%;
+	top:40%;
+	}
+
+	.tagline{
+		display: none;
+		// @include text-shadow(#ccc, 10px);
+		font-family: Tangerine;
+		color: $cream;
+	}
+
+	.name-desc{
+		position: relative;
+		left: 50%;
+		top: 70%;
+
+		margin-left: -350px;
+		text-align: center;
+		width: 700px;
+
+		display: none;
+		font-family: Oswald;
+		color: rgba(0, 0, 0, 0.9);
+
+
+		h4{
+			color: $cream;
+			margin:0;
+			margin-bottom: 0;
+			font-size: 200%;
+		}
+
+		h3{
+			color: $cream;
+			margin:0;
+			margin-top: 5px;
+			font-size: 200%;
+		}
+	}
+}
+
+.mid-section{
+	height: 1540px;
+
+	p{
+		margin: 0;
+		padding: 0;
+	}
+
+	h3{
+		margin: 0;
+		padding: 0;
+	}
+
+	
+}
+
+.footer{
+
+	background-color: $onyx;
+	width: 100%;
+	height: 200px;
+
+	opacity: 0.9;
+
+	.icons{
+		position: relative;
+
+		width: 480px;
+		height: 130px;
+
+		left: 50%;
+		top: 30px;
+
+		margin-left: -240px;
+
+		.github-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 0%;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/github2.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.youtube-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 120px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/youtube.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.gmail-icon{
+			position: absolute;
+
+			bottom:0%;
+			left: 240px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/gmail.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+
+		.linkedin-icon{
+			position: absolute;
+
+			bottom: 0%;
+			left: 360px;
+
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/linkedin.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+	}
+
+}
